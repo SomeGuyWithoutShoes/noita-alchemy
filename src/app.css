@@ -21,6 +21,10 @@ body {
 dd {
     margin-left: 0;
 }
+#main {
+    max-width: 325px;
+    white-space: normal;
+}
 #main dt {
     font-size: 20pt;
     color: #ABC;
@@ -40,13 +44,6 @@ dd {
 #statusDetail {
     font-size: 10pt;
     color: #FA2;
-}
-#results {
-    transition: 5s max-height;
-    overflow: hidden;
-}
-#results.available {
-    max-height: 999px;
 }
 .recipe {
     margin: 6px;
