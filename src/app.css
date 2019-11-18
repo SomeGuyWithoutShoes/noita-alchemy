@@ -37,6 +37,10 @@ dd {
 #main input:focus { 
     outline: none;
 }
+#statusDetail {
+    font-size: 10pt;
+    color: #FA2;
+}
 #results {
     transition: 5s max-height;
     overflow: hidden;
