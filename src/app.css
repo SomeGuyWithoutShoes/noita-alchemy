@@ -21,24 +21,18 @@ body {
 dd {
     margin-left: 0;
 }
-#main {
-    border: 1px double #0A1A2A;
-    border-radius: 20px;
-    padding: 20px;
-    background: #0F1F2F;
-}
 #main dt {
-    font-size: 30pt;
+    font-size: 20pt;
     color: #ABC;
 }
 #main input {
-    font-size: 16pt;
+    font-size: 12pt;
     border: 0;
     border-radius: 5px;
-    padding: 10px;
+    padding: 6px;
     background: #0A1A2A;
     color: #AAA;
-    width: 400px;
+    width: 300px;
 }
 #main input:focus { 
     outline: none;
@@ -52,6 +46,8 @@ dd {
 }
 .recipe {
     margin: 6px;
+    max-width: 300px;
+    white-space: normal;
 }
 .recipe dt {
     font-size: 14pt;
