@@ -84,6 +84,7 @@ let seedReading = 0,
                         results.appendChild(new AlchemyContainer(alchemy))
                     } else if ("error" in alchemy) {
                         console.warn(alchemy.error)
+                        statusDetail.innerText = `Ouch! ${alchemy.error}`
                     }
                     
                     if (!seedCache[currentSeed])
