@@ -1,0 +1,75 @@
+body {
+    font: small-caps 0pt Arial;
+    position: fixed;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    background: #012;
+    text-align: center;
+    white-space: nowrap;
+}
+.aligner, .alignee {
+    display: inline-block;
+    vertical-align: middle;
+}
+.aligner {
+    width: 0;
+    height: 100%;
+}
+.alignee {
+    text-align: left;
+}
+dd {
+    margin-left: 0;
+}
+#main {
+    border: 1px double #0A1A2A;
+    border-radius: 20px;
+    padding: 20px;
+    background: #0F1F2F;
+}
+#main dt {
+    font-size: 30pt;
+    color: #ABC;
+}
+#main input {
+    font-size: 16pt;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #0A1A2A;
+    color: #AAA;
+    width: 400px;
+}
+#main input:focus { 
+    outline: none;
+}
+#results {
+    transition: 5s max-height;
+    overflow: hidden;
+}
+#results.available {
+    max-height: 999px;
+}
+.recipe {
+    margin: 6px;
+}
+.recipe dt {
+    font-size: 14pt;
+    color: #468;
+}
+.recipe dd {
+    position: relative;
+    top: -5px;
+}
+.recipe .material {
+    display: inline-block;
+    border-bottom: 2px solid #246;
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+    white-space: nowrap;
+}
+.recipe .material .name {
+    font: 10pt monospace;
+    color: #666;
+}
