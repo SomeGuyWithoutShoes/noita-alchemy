@@ -82,13 +82,13 @@
                     break
             }
             
-            if ("seed" in this && this.seed < SEEDMAX) {
+            if ("seed" in this && this.seed < SEEDMAX && this.seed > -SEEDMAX) {
                 this.iseed = Math.floor(this.seed * 0.17127 + 1323.5903)
                 this.recipes = {
                     "Lively Concoction": (this.iseed = this.random(this.iseed, 6)) && this.recipe(this.seed),
                     "Alchemical Precursor": (this.iseed = this.random(this.iseed, 2)) && this.recipe(this.seed)
                 }
-            } else if (this.seed > SEEDMAX) {
+            } else if (this.seed > SEEDMAX || this.seed < -SEEDMAX) {
                 this.error = `Received buffer is too large, max value is ${SEEDMAX}.`
             }
             return this
