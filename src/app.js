@@ -82,8 +82,9 @@ let seedReading = 0,
                     if ("recipes" in alchemy) {
                         results.innerHTML = ""
                         results.appendChild(new AlchemyContainer(alchemy))
+                        statusDetail.innerText = ""
                     } else if ("error" in alchemy) {
-                        console.warn(alchemy.error)
+                        results.innerHTML = ""
                         statusDetail.innerText = `Ouch! ${alchemy.error}`
                     }
                     
@@ -91,6 +92,7 @@ let seedReading = 0,
                         seedCache[currentSeed] = alchemy
                 } else {
                     results.innerHTML = ""
+                    statusDetail.innerText = ""
                 }
                 seedReading = currentSeed
             }
